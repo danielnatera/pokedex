@@ -1,5 +1,5 @@
-import { useSearchFilter } from "@/context/SearchFilterContext";
-import { useTranslations } from "@/hooks/useTranslations";
+import { useSearchFilter } from "../../context/SearchFilterContext";
+import { useTranslations } from "../../hooks/useTranslations";
 
 export const SearchInput: React.FC = () => {
   const { searchQuery, setSearchQuery } = useSearchFilter();

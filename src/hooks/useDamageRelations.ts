@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { pokeRepository } from "@/services/pokeRepository";
+import { pokeRepository } from "../services/pokeRepository";
 
 export const useDamageRelations = (pokemonTypes: { type: { name: string; url: string } }[]) => {
   const [damageRelations, setDamageRelations] = useState({

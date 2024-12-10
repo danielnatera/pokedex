@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { pokeRepository, evolutionService } from "@/services/pokeRepository";
-import { Pokemon } from "@/types/apiResponses";
+import { pokeRepository, evolutionService } from "../services/pokeRepository";
+import { Pokemon } from "../types/apiResponses";
 
 export const usePokemonList = () => {
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);

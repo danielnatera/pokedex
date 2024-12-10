@@ -2,7 +2,7 @@ import "../globals.css";
 import { SearchFilterProvider } from "../../context/SearchFilterContext";
 import { PokemonProvider } from "../../context/PokemonContext";
 import { ReactQueryProvider } from "../../context/ReactQueryProvider";
-import { LocaleProvider } from "@/context/LocaleContext";
+import { LocaleProvider } from "../../context/LocaleContext";
 import favicon from "../../../public/favicon.ico";
 
 export const metadata = {

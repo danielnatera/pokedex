@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useTranslations } from "@/hooks/useTranslations";
+import { useTranslations } from "../hooks/useTranslations";
 
 export const NotFound = () => {
   const translations = useTranslations();

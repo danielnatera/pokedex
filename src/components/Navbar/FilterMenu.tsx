@@ -1,6 +1,6 @@
-import { useFilters } from "@/hooks/useFilters";
-import { useSearchFilter } from "@/context/SearchFilterContext";
-import { useTranslations } from "@/hooks/useTranslations";
+import { useFilters } from "../../hooks/useFilters";
+import { useSearchFilter } from "../../context/SearchFilterContext";
+import { useTranslations } from "../../hooks/useTranslations";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import Image from "next/image";
 import { useEffect, useState } from "react";

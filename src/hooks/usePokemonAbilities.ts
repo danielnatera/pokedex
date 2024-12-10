@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { translationService } from "@/services/pokeRepository";
+import { translationService } from "../services/pokeRepository";
 
 export const usePokemonAbilities = (abilities: Array<{ ability: { name: string; url: string } }>, locale: "es" | "en") => {
   const [translatedAbilities, setTranslatedAbilities] = useState<string[]>([]);

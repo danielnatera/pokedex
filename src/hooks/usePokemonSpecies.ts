@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { pokeRepository } from "@/services/pokeRepository";
-import { Species } from "@/types/apiResponses";
+import { pokeRepository } from "../services/pokeRepository";
+import { Species } from "../types/apiResponses";
 
 export const usePokemonSpecies = (pokemonName: string) => {
   const [species, setSpecies] = useState<Species | null>(null);
