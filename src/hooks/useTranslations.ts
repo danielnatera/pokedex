@@ -7,7 +7,7 @@ export const useTranslations = () => {
   if (!locale) return {};
   try {
     
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const translations = require(`../../public/locales/${locale}/common.json`);
     return translations;
   } catch (error) {
