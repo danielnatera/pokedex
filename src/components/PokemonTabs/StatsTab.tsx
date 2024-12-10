@@ -1,6 +1,6 @@
 "use client";
 
-import { PokemonDetails, DamageRelations, Translations, Pokemon } from "@/types/apiResponses";
+import { PokemonDetails, DamageRelations, Translations, Pokemon } from "../../types/apiResponses";
 
 export const StatsTab = ({
   pokemon,

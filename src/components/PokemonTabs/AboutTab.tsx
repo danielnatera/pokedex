@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import SizeIcon from "@/assets/svg/size-icon.svg";
-import WeightIcon from "@/assets/svg/weight-icon.svg";
-import PokeballIcon from "@/assets/svg/pokeball-vector.svg";
-import GenderIcon from "@/assets/svg/gender.svg";
-import { PokemonDetails, Species, Translations } from "@/types/apiResponses";
+import SizeIcon from "../../assets/svg/size-icon.svg";
+import WeightIcon from "../../assets/svg/weight-icon.svg";
+import PokeballIcon from "../../assets/svg/pokeball-vector.svg";
+import GenderIcon from "../../assets/svg/gender.svg";
+import { PokemonDetails, Species, Translations } from "../../types/apiResponses";
 
 export const AboutTab = ({   pokemon,
   species,

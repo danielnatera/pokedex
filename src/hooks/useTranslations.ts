@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "@/context/LocaleContext";
+import { useLocale } from "../context/LocaleContext";
 
 export const useTranslations = () => {
   const locale = useLocale();

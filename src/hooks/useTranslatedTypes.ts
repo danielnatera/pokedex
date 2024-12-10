@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { translationService } from "@/services/pokeRepository";
+import { translationService } from "../services/pokeRepository";
 
 interface PokemonType {
   type: {

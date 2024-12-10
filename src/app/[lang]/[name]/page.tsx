@@ -2,12 +2,12 @@
 
 import { useParams } from "next/navigation";
 import { usePokemonDetail } from "../../../hooks/usePokemonDetails";
-import { usePokemonSpecies } from "@/hooks/usePokemonSpecies";
-import { usePokemonAbilities } from "@/hooks/usePokemonAbilities";
-import { usePokemonEvolution } from "@/hooks/usePokemonEvolutions";
-import { useDamageRelations } from "@/hooks/useDamageRelations";
-import { useTranslatedTypes } from "@/hooks/useTranslatedTypes";
-import { useTranslations } from "@/hooks/useTranslations";
+import { usePokemonSpecies } from "../../../hooks/usePokemonSpecies";
+import { usePokemonAbilities } from "../../../hooks/usePokemonAbilities";
+import { usePokemonEvolution } from "../../../hooks/usePokemonEvolutions";
+import { useDamageRelations } from "../../../hooks/useDamageRelations";
+import { useTranslatedTypes } from "../../../hooks/useTranslatedTypes";
+import { useTranslations } from "../../../hooks/useTranslations";
 import Image from "next/image";
 import Link from "next/link";
 import Pokeball from "../../../assets/svg/Pokeball.svg";

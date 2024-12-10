@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import ArrowRight from "@/assets/svg/arrow-right.svg";
-import { EvolutionPair, Translations, Pokemon } from "@/types/apiResponses";
+import ArrowRight from "../../assets/svg/arrow-right.svg";
+import { EvolutionPair, Translations, Pokemon } from "../../types/apiResponses";
 
 export const EvolutionsTab = ({
   evolutionPairs,
