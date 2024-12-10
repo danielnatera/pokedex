@@ -20,17 +20,19 @@ Proyecto en **Next.js** y **TypeScript** que muestra información de la PokéAPI
 ## 📥 **Instalación**
 1. **Clona el repositorio**:
    ```bash
-[   git clone https://github.com/tu-usuario/tu-repositorio.git](https://github.com/danielnatera/pokedex) ]
-
+   git clone https://github.com/danielnatera/pokedex.git
 
 ## ⚙️ **Ejecutar**
 
 Instalar las dependencias
-**pnpm install**
+   ```bash
+    pnpm install
+   ```
 
 Inicia el servidor en modo desarrollo:
-
-**pnpm run dev**
+   ```bash
+    pnpm run dev
+   ```
 
 Accede a la aplicación en tu navegador en
 **http://localhost:3000**
