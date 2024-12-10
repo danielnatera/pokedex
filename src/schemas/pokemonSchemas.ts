@@ -92,7 +92,7 @@ export const EvolutionDetailsSchema = z.object({
   min_level: z.number().nullable().optional(),
 });
 
-export const EvolutionChainNodeSchema: z.ZodType<any> = z.lazy(() =>
+export const EvolutionChainNodeSchema: z.ZodType<unknown> = z.lazy(() =>
   z.object({
     species: z.object({
       name: z.string(),

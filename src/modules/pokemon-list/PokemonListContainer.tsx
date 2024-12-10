@@ -4,11 +4,10 @@ import { useState, useEffect } from "react";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { PokemonList } from "../../components/PokemonList";
 import { pokeRepository, evolutionService } from "../../services/pokeRepository";
-import { Pokemon, EvolutionData } from "../../types/apiResponses";
+import { Pokemon } from "../../types/apiResponses";
 import { usePokemonContext } from "../../context/PokemonContext";
 import { useSearchFilter } from "../../context/SearchFilterContext"; 
 import { NotFound } from "../../components/NotFound";
-import { useTranslations } from "../../hooks/useTranslations";
 
 export default function PokemonListContainer() {
   const { pokemons, setPokemons } = usePokemonContext();
@@ -16,7 +15,6 @@ export default function PokemonListContainer() {
   const [filteredPokemons, setFilteredPokemons] = useState<Pokemon[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [initialLoadComplete, setInitialLoadComplete] = useState<boolean>(false);
-  const { translations } = useTranslations();
 
   // 🚀 **Verificar si hay algún filtro activo**
   const activeFilters = () => searchQuery !== "" || filters.type !== "" || filters.generation !== "";
@@ -59,7 +57,7 @@ export default function PokemonListContainer() {
               return {
                 name: details.name,
                 url: pokemon.url,
-                types: details.types.map((t: any) => t.type.name),
+                types: details.types.map((t: unknown) => t?.type?.name),
                 generation: species.generation?.name ?? "unknown",
                 evolutions,
               };

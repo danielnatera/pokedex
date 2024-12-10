@@ -4,12 +4,7 @@ import { Logo } from "./Logo";
 import { SearchInput } from "./SearchInput";
 import { FilterMenu } from "./FilterMenu";
 
-interface NavbarProps {
-  onSearch: (query: string) => void;
-  onFilterChange: (newFilters: { type: string; generation: string }) => void;
-}
-
-export const Navbar: React.FC<NavbarProps> = ({ onSearch, onFilterChange }) => {
+export const Navbar = () => {
   return (
     <nav className="bg-primary text-white p-4 shadow-lg flex flex-col items-center justify-between gap-4 w-full">
       <Logo />

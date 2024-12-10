@@ -18,7 +18,7 @@ export const usePokemonAbilities = (abilities: Array<{ ability: { name: string; 
         );
         setTranslatedAbilities(formattedAbilities);
       } catch (error) {
-        setError("Error al cargar habilidades");
+        setError("Error al cargar habilidades", error);
       } finally {
         setLoading(false);
       }
