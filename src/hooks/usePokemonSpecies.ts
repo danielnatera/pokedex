@@ -16,7 +16,7 @@ export const usePokemonSpecies = (pokemonName: string) => {
         const speciesData = await pokeRepository.getPokemonSpecies(pokemonName);
         setSpecies(speciesData);
       } catch (error) {
-        setError("Error al cargar la especie");
+        setError("Error al cargar la especie", error);
       } finally {
         setLoading(false);
       }

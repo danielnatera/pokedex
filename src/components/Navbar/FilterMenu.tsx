@@ -22,15 +22,6 @@ export const FilterMenu: React.FC = () => {
     setFilters({ ...filters, generation: e.target.value });
   };
 
-  const handleOutsideClick = (event: MouseEvent) => {
-    const target = event.target as HTMLElement;
-    const isClickInsideMenu = target.closest("#filter-menu");
-    const isClickOnButton = target.closest("#filter-button");
-  
-    if (!isClickInsideMenu && !isClickOnButton) {
-      setIsMenuOpen(false);
-    }
-  };
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement;

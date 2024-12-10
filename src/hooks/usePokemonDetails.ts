@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { pokeRepository } from "../services/pokeRepository";
 
 export const usePokemonDetail = (name: string) => {
-  const [pokemon, setPokemon] = useState<any>(null);
+  const [pokemon, setPokemon] = useState<unknown>(null);
   const [description, setDescription] = useState<{ es: string; en: string }>({ es: '', en: '' });
 
   useEffect(() => {

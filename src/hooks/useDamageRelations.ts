@@ -18,7 +18,7 @@ export const useDamageRelations = (pokemonTypes: { type: { name: string; url: st
         const damageRelations = await pokeRepository.getDamageRelations(pokemonTypes);
         setDamageRelations(damageRelations);
       } catch (error) {
-        setError("Error al cargar las debilidades y fortalezas");
+        setError("Error al cargar las debilidades y fortalezas", error);
       } finally {
         setLoading(false);
       }

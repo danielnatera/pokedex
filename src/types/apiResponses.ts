@@ -74,7 +74,7 @@ export type Evolution = {
 };
 
 export interface Pokemon {
-  stats: any;
+  stats: unknown;
   id: number;
   name: string;
   url: string;

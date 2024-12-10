@@ -1,6 +1,6 @@
 "use client";
 
-import { PokemonDetails, DamageRelations, Translations, Pokemon } from "../../types/apiResponses";
+import { PokemonDetails, DamageRelations, Translations } from "../../types/apiResponses";
 
 export const StatsTab = ({
   pokemon,
@@ -21,9 +21,9 @@ export const StatsTab = ({
       {/* Estadísticas base del Pokémon */}
       <ul className="space-y-3 w-full mt-4 bg-pokeBackground p-4 rounded-3xl">
         {pokemon.stats.map((stat: any) => (
-          <li key={stat.stat.name} className="flex items-center">
+          <li key={stat?.stat?.name} className="flex items-center">
             <span className="w-1/4 capitalize font-medium">
-              {translations[stat.stat.name] || stat.stat.name}:
+              {translations[stat?.stat?.name] || stat?.stat?.name}:
             </span>
             <span className="w-12 text-center">{stat.base_stat}</span>
             <div className="flex-1 bg-gray-200 rounded-full h-4 ml-4 overflow-hidden">

@@ -46,7 +46,7 @@ export const usePokemonList = () => {
               return {
                 name: details.name,
                 url: pokemon.url,
-                types: details.types.map((t: any) => t.type.name),
+                types: details.types.map((t: unknown) => t?.type?.name),
                 generation: generationName, // ✅ Corrección aquí
                 evolutions,
               };

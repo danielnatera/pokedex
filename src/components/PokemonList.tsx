@@ -6,6 +6,7 @@ import { Pokemon } from '../types/apiResponses';
 export const PokemonList = ({ pokemons }: { pokemons: Pokemon[] }) => {
   const params = useParams();
   const locale = params.lang || 'es';
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   const translations = require(`../../public/locales/${locale}/common.json`);
   
   return (
