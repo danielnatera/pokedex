@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Pokeball from "../../assets/svg/Pokeball.svg";
+import Pokeball from "../../assets/svg/pokeball.svg";
 
 export const Logo: React.FC = () => (
   <div className="flex items-center gap-6">
