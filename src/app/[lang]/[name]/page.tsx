@@ -10,7 +10,7 @@ import { useTranslatedTypes } from "../../../hooks/useTranslatedTypes";
 import { useTranslations } from "../../../hooks/useTranslations";
 import Image from "next/image";
 import Link from "next/link";
-import Pokeball from "../../../assets/svg/Pokeball.svg";
+import Pokeball from "../../../assets/svg/pokeball.svg";
 import ArrowBack from "../../../assets/svg/arrow-back.svg";
 import { useState } from "react";
 
